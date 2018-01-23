@@ -18,7 +18,7 @@ global_step : A function used in batch_renorm, for batch renorm there is a decay
 
 ## Future Directions
 
-Batch renorm truth values shold be included in the resnet_run layer. In the convolution_nn layer there should be an addition of a global step and increment op for the batch_renorm layer
+Batch renorm truth values shold be included in the resnet_run layer. In the convolution_nn layer there should be an addition of a global step and increment op for the batch_renorm layer. Currently, global_step and increment_op have to be created and called outside the bacth norm because if they are created and run inside the bacth norm then it will increment once in every layer. I'm trying to see if these ops can be generated and run automatically within the batch_renorm layer without having to worry about them being called in every single layer. 
 
 
 
