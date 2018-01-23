@@ -23,6 +23,8 @@ class convolution_net(object):
         learning_rate : learning rate for the adam optimizer
         
         """
+        assert len(keep) == len(pool) and len(shape) == len(batch_norm) and len(batch_norm) ==len(keep) and len(drop_out)== len(batch_norm), "Keep, droup_out, batch_norm, pool and shape must all be the same size"
+
         
         self.n_conv_layers = len(keep)
         self.shape = shape
