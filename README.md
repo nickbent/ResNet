@@ -1,6 +1,6 @@
 # ResNet
  
- ##Structure
+ ## Structure
  
 This code is an implementation of "Deep Residual Learning for Image Recognition" by He et al from Microsoft in tensorlayer. ensorLayer is a deep learning and reinforcement learning library based on TensorFlow. I like tensorlayer because it is easier to use than tensorflow but not quite as high level as Keras, this gives you flexibility in impleneting new layers and using the tensorflow API. The code is structured as followed;  
  
