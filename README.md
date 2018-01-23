@@ -24,4 +24,4 @@ Batch renorm truth values shold be included in the resnet_run layer. In the conv
 
 ## Dependencies:
 
-Tensorlayer, Tensorflow v1.3
+Tensorlayer, Tensorflow v1.3, numpy, time
