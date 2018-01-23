@@ -10,10 +10,18 @@ convolution_nn : Creates a class structure for running the tensorflow graph. Fir
 
 resnet_run : Script to run the resnet, using either cifar10 or MNISt data. Here you can create the sizing of the layers, whether the layers contain batch_norm, drop_out or pool layers. 
 
+## Batch ReNorm
+
 batch_renorm : My implementation for  "Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models". I created a pull request in tensorlayer for this layer
 
 global_step : A function used in batch_renorm, for batch renorm there is a decay on the paramaters so you need to keep track of what step you are in. This global step function makes sure you created an op that keeps track of the global step and increments it 
 
+## Future Directions
+
+Batch renorm truth values shold be included in the resnet_run layer. In the convolution_nn layer there should be an addition of a global step and increment op for the batch_renorm layer
 
 
-Dependencies: Tensorlayer, Tensorflow v1.3
+
+## Dependencies:
+
+Tensorlayer, Tensorflow v1.3
